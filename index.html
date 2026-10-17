@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AGENT ARYA YT | Esports</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080808;
+            color: white;
+        }
+
+        header {
+            background: #151515;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ff3030;
+        }
+
+        header h1 {
+            color: #ff3030;
+            font-size: 27px;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #cccccc;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            padding: 15px 10px;
+            background: #101010;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff3030;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 75px 20px;
+            background: linear-gradient(
+                135deg,
+                #240000,
+                #080808,
+                #180000
+            );
+        }
+
+        .hero h2 {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .hero span {
+            color: #ff3030;
+        }
+
+        .hero p {
+            color: #cccccc;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 24px;
+            background: #ff3030;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: #171717;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 22px;
+            margin: 15px auto;
+            max-width: 400px;
+        }
+
+        .card h3 {
+            color: #ff3030;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #cccccc;
+            line-height: 1.7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px 15px;
+            background: #151515;
+            color: #aaaaaa;
+            border-top: 1px solid #333;
+        }
+      form label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    padding: 13px;
+    background: #080808;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form input:focus {
+    outline: 2px solid #ff3030;
+}
+
+form button {
+    width: 100%;
+    border: none;
+    margin-top: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#formMessage {
+    margin-top: 15px;
+    overflow-wrap: anywhere;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>AGENT ARYA YT</h1>
+        <p>OFFICIAL ESPORTS TOURNAMENTS</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#tournaments">Tournaments</a>
+        <a href="#register">Register</a>
+        <a href="#leaderboard">Leaderboard</a>
+    </nav>
+
+    <div class="hero" id="home">
+        <h2>WELCOME TO <span>ESPORTS</span></h2>
+
+        <p>
+            Compete with the best.<br>
+            Build your squad.<br>
+            Fight for victory!
+        </p>
+
+        <a href="#register" class="button">
+            REGISTER YOUR TEAM
+        </a>
+    </div>
+
+    <section id="tournaments">
+        <h2>🔥 TOURNAMENTS</h2>
+
+        <div class="card">
+            <h3>FREE FIRE SQUAD</h3>
+            <p>Mode: Squad</p>
+            <p>Team Size: 4 Players</p>
+            <p>Status: Coming Soon</p>
+        </div>
+    </section>
+
+    <section id="register">
+    <h2>📝 TEAM REGISTRATION</h2>
+
+    <form id="registrationForm" class="card">
+
+        <h3>Register Your Squad</h3>
+
+        <label for="teamName">Team Name</label>
+        <input
+            type="text"
+            id="teamName"
+            placeholder="Enter your team name"
+            required
+        >
+
+        <label for="leaderName">Team Leader Name</label>
+        <input
+            type="text"
+            id="leaderName"
+            placeholder="Enter leader name"
+            required
+        >
+
+        <label for="leaderUID">Leader Free Fire UID</label>
+        <input
+            type="text"
+            id="leaderUID"
+            placeholder="Enter leader UID"
+            inputmode="numeric"
+            required
+        >
+
+        <label for="discordName">Discord Username</label>
+        <input
+            type="text"
+            id="discordName"
+            placeholder="Enter Discord username"
+            required
+        >
+
+        <label for="phone">Contact Number</label>
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Enter contact number"
+            inputmode="tel"
+            required
+        >
+
+        <h3>Squad Members</h3>
+
+        <label for="player2">Player 2 UID</label>
+        <input
+            type="text"
+            id="player2"
+            placeholder="Enter Player 2 UID"
+            required
+        >
+
+        <label for="player3">Player 3 UID</label>
+        <input
+            type="text"
+            id="player3"
+            placeholder="Enter Player 3 UID"
+            required
+        >
+
+        <label for="player4">Player 4 UID</label>
+        <input
+            type="text"
+            id="player4"
+            placeholder="Enter Player 4 UID"
+            required
+        >
+
+        <button type="submit" class="button">
+            REGISTER TEAM
+        </button>
+
+        <p id="formMessage" role="status"></p>
+
+    </form>
+</section>
+
+    <section id="leaderboard">
+        <h2>🏆 LEADERBOARD</h2>
+
+        <div class="card">
+            <h3>Tournament Rankings</h3>
+            <p>Team rankings will appear here after matches.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 AGENT ARYA YT Esports</p>
+        <p>Play Fair. Stay Friendly. Be a Champion!</p>
+    </footer>
+
+<script>
+const form = document.getElementById("registrationForm");
+const message = document.getElementById("formMessage");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const teamName = document.getElementById("teamName").value.trim();
+    const leaderName = document.getElementById("leaderName").value.trim();
+    const leaderUID = document.getElementById("leaderUID").value.trim();
+
+    const player2 = document.getElementById("player2").value.trim();
+    const player3 = document.getElementById("player3").value.trim();
+    const player4 = document.getElementById("player4").value.trim();
+
+    if (!teamName || !leaderName || !leaderUID ||
+        !player2 || !player3 || !player4) {
+        message.textContent = "Please complete all required fields.";
+        message.style.color = "#ff3030";
+        return;
+    }
+
+    const registrationID = "ARYA-" +
+        Date.now().toString().slice(-8);
+
+    message.style.color = "#39ff88";
+    message.textContent =
+        "Registration form completed! Reference ID: " +
+        registrationID +
+        ". Your team is not registered in the tournament database yet.";
+
+    console.log({
+        registrationID,
+        teamName,
+        leaderName,
+        leaderUID,
+        player2,
+        player3,
+        player4
+    });
+
+    form.reset();
+});
+</script>
+</body>
+</html>
